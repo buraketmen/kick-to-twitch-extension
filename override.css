@@ -1,0 +1,65 @@
+.item-status-indicator,
+.avatar-live-tag {
+  background-color: var(--green-base) !important;
+}
+
+.text-primary > .odometer {
+  color: var(--green-base) !important;
+}
+
+.base-toggle:not(.toggle-disabled).toggled-on,
+.chatroom-history-breaker div {
+  background-color: var(--purple-base) !important;
+}
+.link,
+.text-primary,
+.stream-category,
+.live-tag-component,
+.chatroom-history-breaker,
+.\!text-primary-dark {
+  color: var(--purple-base) !important;
+}
+
+:is(
+    .link,
+    .nav-group > :not([hidden]) ~ :not([hidden]),
+    .stream-category,
+    .text-primary,
+    .live-tag-component,
+    .chatroom-history-breaker,
+    .\!text-primary-dark
+  ):is(:hover, :active, :focus) {
+  color: var(--purple-base-focus) !important;
+}
+
+.panel-tabs .tab-item.tab-item-active,
+.border-primary,
+.\!border-primary\/100 {
+  border-color: var(--purple-base) !important;
+}
+
+:is(.\!border-primary\/100, .border-primary):is(:hover, :active, :focus) {
+  border-color: var(--purple-base-focus) !important;
+}
+
+.sidebar-item .object-cover:not([src="null"]) {
+  filter: saturate(0.95) !important;
+}
+
+.bg-primary,
+.variant-action {
+  background-color: var(--purple-base) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+:is(.bg-primary, .variant-action):disabled {
+  background-color: var(--purple-base-disabled) !important;
+}
+
+:is(.bg-primary, .variant-action):is(:hover, :active, :focus) {
+  background-color: var(--purple-base-focus) !important;
+}
+
+.avatar-holder-live .owner-avatar {
+  box-shadow: var(--green-base), var(--green-base), var(--green-base, 0 0 #0000) !important;
+}

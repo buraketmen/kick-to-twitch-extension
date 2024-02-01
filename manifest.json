@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Kick to Twitch",
+  "version": "1.0.0",
+  "host_permissions": ["https://kick.com/*"],
+  "icons": {
+    "16": "images/toro_16.png",
+    "32": "images/toro_32.png",
+    "48": "images/toro_48.png",
+    "128": "images/toro_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://kick.com/*"],
+      "css": ["main.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["override.css"],
+      "matches": ["https://kick.com/*"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": ["storage", "scripting", "tabs", "activeTab"]
+}
