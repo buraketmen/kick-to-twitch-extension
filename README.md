@@ -5,4 +5,5 @@
 1. Solve Localstorage permission problem
 1. Get real purple color from twitch
 1. Replace kick logo with twitch logo
-1. Make the code cleaner and repeat step 4
+1. Center the switch without using margin 
+1. Make the code cleaner and repeat step 5
